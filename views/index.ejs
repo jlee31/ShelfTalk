@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<h1>Welcome to Shelf Talk</h1>
+<div class="posts">
+  <% posts.forEach(post => { %>
+    <article class="post-preview">
+      <h2><a href="/post/<%= post.id %>"><%= post.title %></a></h2>
+      <p class="date"><%= post.date %></p>
+      <p><%= post.content.substring(0, 100) %>...</p>
+    </article>
+  <% }); %>
+</div>
+<%- include('partials/footer') %>
