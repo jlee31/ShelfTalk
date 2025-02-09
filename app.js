@@ -8,6 +8,12 @@ let posts = [
       title: 'First Blog Post',
       content: 'This is my first blog post!',
       date: new Date().toLocaleDateString()
+    },
+    {
+      id: 2,
+      title: 'Fourth Wing',
+      content: "Not a bad book",
+      date: new Date().toLocaleTimeString()
     }
   ];
 
